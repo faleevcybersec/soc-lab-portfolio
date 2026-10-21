@@ -12,8 +12,7 @@
 Атакующая машина (Kali) выполняет перебор паролей по SSH к серверу Wazuh. Используется словарь из 5 популярных паролей и несуществующий пользователь `fakeuser`.
 
 ![Запуск Hydra](screenshot-01-hydra.png)
-*Рис 1![Uploading screenshot-01-hydra.png.png…]()
-. Процесс брутфорса в терминале Kali (найдено 0 валидных паролей).*
+*Рис 1. Процесс брутфорса в терминале Kali (найдено 0 валидных паролей).*
 
 ## 🔍 Детали детекта в Wazuh
 Wazuh Agent на сервере успешно считал лог `/var/log/auth.log` и сгенерировал алерты.
@@ -32,9 +31,7 @@ Wazuh Agent на сервере успешно считал лог `/var/log/aut
 *Рис 3. Детальный разбор JSON-полей события.*
 
 ## 🛡 Маппинг на MITRE ATT&CK
-- **Tactic:** Credential Access (TA0006)<img width="1920" height="920" alt="screenshot-03-wazuh-details png" src="https://github.com/user-attachments/assets/8ea61695-97af-461a-8d16-d8d7f4db177f" />
-<img width="1920" height="916" alt="screenshot-02-wazuh-graph png" src="https://github.com/user-attachments/assets/121c30c7-c0a4-4bb8-9d85-e6c04ee6a935" />
-
+- **Tactic:** Credential Access (TA0006)
 - **Technique:** Brute Force: Password Guessing (T1110.001)
 
 ## ✅ Вердикт и рекомендации
